@@ -1,0 +1,200 @@
+[
+  {
+    "file": "static/models/FR3WMS/robot.urdf",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/urdf/FR3WMS.urdf",
+    "sha256": "73d01435d7be367176145de1376731549e9f1bf7a2bf130d09f9bf0976259767",
+    "bytes": 11053
+  },
+  {
+    "file": "static/models/FR3WMS/base_link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/base_link.STL",
+    "sha256": "896ac9bc52e36b1bc26ceda6d7e1ec502d58fb6bbac233968c41bf9841f18485",
+    "bytes": 158184
+  },
+  {
+    "file": "static/models/FR3WMS/shoulder_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/shoulder_Link.STL",
+    "sha256": "a27a33ec60c839188a5a77bc51a12a7c328e35b3a651bc79ab739806602e760d",
+    "bytes": 387984
+  },
+  {
+    "file": "static/models/FR3WMS/upperarm_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/upperarm_Link.STL",
+    "sha256": "b53ffcc3c7459d19245d46262b531daf0bf92216f4f8e7691b8d8faabf946786",
+    "bytes": 1537884
+  },
+  {
+    "file": "static/models/FR3WMS/forearm_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/forearm_Link.STL",
+    "sha256": "512b15f7a74129c05defea570caf28c89a9b8c275d765d590fa816e8715691d1",
+    "bytes": 1368184
+  },
+  {
+    "file": "static/models/FR3WMS/wrist1_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/wrist1_Link.STL",
+    "sha256": "b52dafe2fecf16b11719ae27c0f9de115fb340baf9737020aa236edc8bcc77b2",
+    "bytes": 317484
+  },
+  {
+    "file": "static/models/FR3WMS/wrist2_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/wrist2_Link.STL",
+    "sha256": "6015e4cd0c7f34600d2c18734b44e57ca78b16b8a9d56f4ec4667b5de62ccc28",
+    "bytes": 317484
+  },
+  {
+    "file": "static/models/FR3WMS/wrist3_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WMS/collision/wrist3_Link.STL",
+    "sha256": "a80e158c1451f1d01724ab8c32e2e0807703d6177d0815376c9029006b521677",
+    "bytes": 573684
+  },
+  {
+    "file": "static/models/FR3WML/robot.urdf",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/urdf/FR3WML.urdf",
+    "sha256": "14251e40a5dd802d80d17409768976075e85f9c43b38a406b209c2da7c591f44",
+    "bytes": 11051
+  },
+  {
+    "file": "static/models/FR3WML/base_link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/base_link.STL",
+    "sha256": "07bc909988a4221f9456548e74ae6b194ae4e94af019881aa213d1197de0a701",
+    "bytes": 549834
+  },
+  {
+    "file": "static/models/FR3WML/shoulder_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/shoulder_Link.STL",
+    "sha256": "34c6bfc1cb7b8f709288ba82734c98201750d134f6075e383b043acdb1a40a3a",
+    "bytes": 342184
+  },
+  {
+    "file": "static/models/FR3WML/upperarm_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/upperarm_Link.STL",
+    "sha256": "fb19a77a33ccc412fd35d79478178bab37577ad01dcd229b964b2e28a793e725",
+    "bytes": 1099184
+  },
+  {
+    "file": "static/models/FR3WML/forearm_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/forearm_Link.STL",
+    "sha256": "c5d9de7b418d624f478c789d30f24c93508d7cf320ad38145f3de15d9d679ee8",
+    "bytes": 1250084
+  },
+  {
+    "file": "static/models/FR3WML/wrist1_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/wrist1_Link.STL",
+    "sha256": "31a9b388bcf0f8a6127ea587320fbe2d3704a86ff928388219d8af17ad84e3da",
+    "bytes": 367084
+  },
+  {
+    "file": "static/models/FR3WML/wrist2_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/wrist2_Link.STL",
+    "sha256": "45d4693a130612c2f9964a212dd1d206efe62d113d45f040fa4d8d2ff43ecaf0",
+    "bytes": 367084
+  },
+  {
+    "file": "static/models/FR3WML/wrist3_Link.stl",
+    "source": "https://raw.githubusercontent.com/FAIR-INNOVATION/frcobot_ros2/fcf0c7f0d60d949d8a9a4238f929a44d07f60379/fairino_description/meshes/FR3WML/collision/wrist3_Link.STL",
+    "sha256": "bb95b8e25c116d43b4a101f63560bee8531bb5a6bcbf7b53290d6dd9bd9fe806",
+    "bytes": 573684
+  },
+  {
+    "file": "static/models/OmniPicker/source.urdf.xacro",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/xacro/gripper.omnipicker.urdf.xacro",
+    "sha256": "b20d8691b03a256ad3481380b71fd1e1eaa11495673f4bf7fd7377f67238d183",
+    "bytes": 16749
+  },
+  {
+    "file": "static/models/OmniPicker/source/base_link.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/base_link.dae",
+    "sha256": "f3de370d407649d2d080976ef84b7dbf53a6ec2608adee784cd39ae52da6cf46",
+    "bytes": 3251681
+  },
+  {
+    "file": "static/models/OmniPicker/source/inner_link1.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/inner_link1.dae",
+    "sha256": "f97b7bc5fd7babeaa464c735de81365bf4c0f2e541a914bb1016b4c6b9a28a4c",
+    "bytes": 1615951
+  },
+  {
+    "file": "static/models/OmniPicker/source/inner_link2.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/inner_link2.dae",
+    "sha256": "579464552d68d67fb96c54446417d93e378b5057b06d66cca01991a6eaf71f07",
+    "bytes": 1377521
+  },
+  {
+    "file": "static/models/OmniPicker/source/inner_link3.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/inner_link3.dae",
+    "sha256": "957bb9cd3dd3dc4b87c470481efe7e5714e1f4166d13dbe20dbcb7193e0b2f55",
+    "bytes": 2160332
+  },
+  {
+    "file": "static/models/OmniPicker/source/inner_link4.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/inner_link4.dae",
+    "sha256": "f9430adcedda2168d8ccb5f1e84bf88d97aa680d9d9a2a64024b4550924c99b5",
+    "bytes": 1431164
+  },
+  {
+    "file": "static/models/OmniPicker/source/outer_link1.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/outer_link1.dae",
+    "sha256": "cddc30a77af27a5c3b612d61dc20a1a9815d10b02b23ed65e3c382e23fa7bd89",
+    "bytes": 1615571
+  },
+  {
+    "file": "static/models/OmniPicker/source/outer_link2.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/outer_link2.dae",
+    "sha256": "a6f39c4a2f483a3962aa479ee7497f6331741fc1da486d3881a7dc49a09f55a3",
+    "bytes": 1170312
+  },
+  {
+    "file": "static/models/OmniPicker/source/outer_link3.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/outer_link3.dae",
+    "sha256": "85bdf69e7f8f39024f02c204668237f08175d0901808d6203d8c657efe15c3cc",
+    "bytes": 2167760
+  },
+  {
+    "file": "static/models/OmniPicker/source/outer_link4.dae",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/robots/genie/g2/meshes/gripper/omnipicker/outer_link4.dae",
+    "sha256": "7f5dbb13ce5c5f8b7543e28c21630ed7b18405f2878563fb9a9ca7766ded4c28",
+    "bytes": 2495356
+  },
+  {
+    "file": "static/models/OmniPicker/LICENSE",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/LICENSE",
+    "sha256": "fe2a94ac8aa581692d25e4dd5f3513875f5457b33f54cd79e2eb33d5afdd459e",
+    "bytes": 11346
+  },
+  {
+    "file": "static/models/OmniPicker/THIRD_PARTY_NOTICES",
+    "source": "https://raw.githubusercontent.com/AgibotTech/genie_sim_robot_model/6d5b2159806ae0e64b432b638e9ee288d8bddc8f/THIRD_PARTY_NOTICES",
+    "sha256": "81347c0223f011ffb5b441119b11ecd3a16a335162da885863a68831a9c97bfa",
+    "bytes": 9678
+  },
+  {
+    "file": "static/vendor/three.module.min.js",
+    "source": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.min.js",
+    "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+    "bytes": 338908
+  },
+  {
+    "file": "static/vendor/three.core.min.js",
+    "source": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.core.min.js",
+    "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+    "bytes": 381124
+  },
+  {
+    "file": "static/vendor/OrbitControls.js",
+    "source": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/controls/OrbitControls.js",
+    "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+    "bytes": 38703
+  },
+  {
+    "file": "static/vendor/STLLoader.js",
+    "source": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/loaders/STLLoader.js",
+    "sha256": "023ed97f848b633d8bcd53d4db3b996d29d0c644088700691297c552257d480b",
+    "bytes": 10715
+  },
+  {
+    "file": "static/vendor/THREE-LICENSE",
+    "source": "https://cdn.jsdelivr.net/npm/three@0.180.0/LICENSE",
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "bytes": 1081
+  }
+]

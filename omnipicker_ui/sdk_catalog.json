@@ -1,0 +1,5052 @@
+{
+  "schema_version": 1,
+  "fr3": {
+    "source": "external-sdk/fairino/Robot.py",
+    "sha256": "2e6c9434786cad0a2d61e3103168a18458d5087af4e9a6a8964dd1d51e207de1",
+    "class_name": "fairino.Robot.RPC",
+    "methods": [
+      {
+        "name": "SetUDPCmdRpyCallback",
+        "signature": "SetUDPCmdRpyCallback(callback: UdpFrameCallback)",
+        "line": 2279,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SendUDPFrame",
+        "signature": "SendUDPFrame(data: str)",
+        "line": 2288,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "connect_to_robot",
+        "signature": "connect_to_robot()",
+        "line": 2311,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetReConnectParam",
+        "signature": "SetReConnectParam(enable: bool, maxRetries: int, period: int)",
+        "line": 2322,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "reconnect",
+        "signature": "reconnect()",
+        "line": 2339,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDESetStateConfig",
+        "signature": "CNDESetStateConfig(states: List[RobotState], period: int)",
+        "line": 2477,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDEAddState",
+        "signature": "CNDEAddState(state: RobotState)",
+        "line": 2491,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDEDeleteState",
+        "signature": "CNDEDeleteState(state: RobotState)",
+        "line": 2504,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDESetPeriod",
+        "signature": "CNDESetPeriod(period: int)",
+        "line": 2517,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDEGetConfig",
+        "signature": "CNDEGetConfig()",
+        "line": 2530,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDESendStart",
+        "signature": "CNDESendStart()",
+        "line": 2541,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDESendStop",
+        "signature": "CNDESendStop()",
+        "line": 2552,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDEConnect",
+        "signature": "CNDEConnect()",
+        "line": 2563,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CNDEDisconnect",
+        "signature": "CNDEDisconnect()",
+        "line": 2575,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "setup_logging",
+        "signature": "setup_logging(output_model=1, file_path='', file_num=5)",
+        "line": 2585,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "start_logging_thread",
+        "signature": "start_logging_thread(log_handler)",
+        "line": 2625,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "join_logging_thread",
+        "signature": "join_logging_thread()",
+        "line": 2631,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "set_log_level",
+        "signature": "set_log_level(lvl)",
+        "line": 2641,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "log_call",
+        "signature": "log_call(func)",
+        "line": 2648,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "log_debug",
+        "signature": "log_debug(message)",
+        "line": 2677,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "log_info",
+        "signature": "log_info(message)",
+        "line": 2682,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "log_warning",
+        "signature": "log_warning(message)",
+        "line": 2687,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "log_error",
+        "signature": "log_error(message)",
+        "line": 2692,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "send_message",
+        "signature": "send_message(message)",
+        "line": 2697,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSafetyCode",
+        "signature": "GetSafetyCode()",
+        "line": 2731,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSDKVersion",
+        "signature": "GetSDKVersion()",
+        "line": 2750,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetControllerIP",
+        "signature": "GetControllerIP()",
+        "line": 2767,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "Mode",
+        "signature": "Mode(state)",
+        "line": 2791,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "DragTeachSwitch",
+        "signature": "DragTeachSwitch(state)",
+        "line": 2816,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "IsInDragTeach",
+        "signature": "IsInDragTeach()",
+        "line": 2838,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "RobotEnable",
+        "signature": "RobotEnable(state)",
+        "line": 2862,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "StartJOG",
+        "signature": "StartJOG(ref, nb, dir, max_dis, vel=20.0, acc=100.0)",
+        "line": 2892,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "StopJOG",
+        "signature": "StopJOG(ref)",
+        "line": 2920,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ImmStopJOG",
+        "signature": "ImmStopJOG()",
+        "line": 2941,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveJ",
+        "signature": "MoveJ(joint_pos, tool, user, desc_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=0.0, ovl=100.0, exaxis_pos=[0.0, 0.0, 0.0, 0.0], blendT=-1.0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])",
+        "line": 2971,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveL",
+        "signature": "MoveL(desc_pos, tool, user, joint_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=0.0, ovl=100.0, blendR=-1.0, blendMode=0, exaxis_pos=[0.0, 0.0, 0.0, 0.0], search=0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], oacc=100.0, config=-1, velAccParamMode=0, overSpeedStrategy=0, speedPercent=10)",
+        "line": 3032,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveL1",
+        "signature": "MoveL1(desc_pos, tool, user, joint_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=0.0, ovl=100.0, blendR=-1.0, blendMode=0, exaxis_pos=[0.0, 0.0, 0.0, 0.0], search=0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], config=-1, overSpeedStrategy=0, speedPercent=10)",
+        "line": 3093,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveL2",
+        "signature": "MoveL2(desc_pos, tool, user, joint_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=0.0, ovl=100.0, blendR=-1.0, blendMode=0, exaxis_pos=[0.0, 0.0, 0.0, 0.0], search=0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], oacc=100.0, config=-1, velAccParamMode=0, overSpeedStrategy=0, speedPercent=10, status=0)",
+        "line": 3151,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveC",
+        "signature": "MoveC(desc_pos_p, tool_p, user_p, desc_pos_t, tool_t, user_t, joint_pos_p=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], joint_pos_t=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel_p=20.0, acc_p=100.0, exaxis_pos_p=[0.0, 0.0, 0.0, 0.0], offset_flag_p=0, offset_pos_p=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel_t=20.0, acc_t=100.0, exaxis_pos_t=[0.0, 0.0, 0.0, 0.0], offset_flag_t=0, offset_pos_t=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], ovl=100.0, blendR=-1.0, oacc=100.0, config=-1, velAccParamMode=0)",
+        "line": 3240,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "Circle",
+        "signature": "Circle(desc_pos_p, tool_p, user_p, desc_pos_t, tool_t, user_t, joint_pos_p=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], joint_pos_t=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel_p=20.0, acc_p=0.0, exaxis_pos_p=[0.0, 0.0, 0.0, 0.0], vel_t=20.0, acc_t=0.0, exaxis_pos_t=[0.0, 0.0, 0.0, 0.0], ovl=100.0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], oacc=100.0, blendR=-1, config=-1, velAccParamMode=0)",
+        "line": 3342,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "NewSpiral",
+        "signature": "NewSpiral(desc_pos, tool, user, param, joint_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=20, exaxis_pos=[0.0, 0.0, 0.0, 0.0], ovl=100.0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], config=-1)",
+        "line": 3493,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoMoveStart",
+        "signature": "ServoMoveStart(cmdType=0)",
+        "line": 3550,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoMoveEnd",
+        "signature": "ServoMoveEnd(cmdType=0)",
+        "line": 3604,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoJ",
+        "signature": "ServoJ(joint_pos, axisPos, acc=0.0, vel=0.0, cmdT=0.008, filterT=0.0, gain=0.0, id=0, cmdType=0)",
+        "line": 3666,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoCart",
+        "signature": "ServoCart(mode, desc_pos, exaxis, pos_gain=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0], acc=0.0, vel=0.0, cmdT=0.008, filterT=0.0, gain=0.0)",
+        "line": 3777,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoJTStart",
+        "signature": "ServoJTStart(cmdType=0)",
+        "line": 3809,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoJT",
+        "signature": "ServoJT(torque, interval, checkFlag=0, jPowerLimit=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], jVelLimit=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], cmdType=0)",
+        "line": 3858,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoJTEnd",
+        "signature": "ServoJTEnd(cmdType=0)",
+        "line": 3939,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveCart",
+        "signature": "MoveCart(desc_pos, tool, user, vel=20.0, acc=0.0, ovl=100.0, blendT=-1.0, config=-1)",
+        "line": 3990,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SplineStart",
+        "signature": "SplineStart()",
+        "line": 4021,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SplinePTP",
+        "signature": "SplinePTP(joint_pos, tool, user, desc_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=100.0, ovl=100.0)",
+        "line": 4048,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SplineEnd",
+        "signature": "SplineEnd()",
+        "line": 4086,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "NewSplineStart",
+        "signature": "NewSplineStart(type, averageTime=2000)",
+        "line": 4108,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "NewSplinePoint",
+        "signature": "NewSplinePoint(desc_pos, tool, user, lastFlag, joint_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=0.0, acc=0.0, ovl=100.0, blendR=0.0, config=-1)",
+        "line": 4140,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "NewSplineEnd",
+        "signature": "NewSplineEnd()",
+        "line": 4182,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "StopMotion",
+        "signature": "StopMotion()",
+        "line": 4203,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PauseMotion",
+        "signature": "PauseMotion()",
+        "line": 4224,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ResumeMotion",
+        "signature": "ResumeMotion()",
+        "line": 4242,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PointsOffsetEnable",
+        "signature": "PointsOffsetEnable(flag, offset_pos)",
+        "line": 4261,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PointsOffsetDisable",
+        "signature": "PointsOffsetDisable()",
+        "line": 4284,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDO",
+        "signature": "SetDO(id, status, smooth=0, block=0)",
+        "line": 4312,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolDO",
+        "signature": "SetToolDO(id, status, smooth=0, block=0)",
+        "line": 4340,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAO",
+        "signature": "SetAO(id, value, block=0)",
+        "line": 4367,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolAO",
+        "signature": "SetToolAO(id, value, block=0)",
+        "line": 4393,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDI",
+        "signature": "GetDI(id, block=0)",
+        "line": 4419,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetToolDI",
+        "signature": "GetToolDI(id, block=0)",
+        "line": 4450,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitDI",
+        "signature": "WaitDI(id, status, maxtime, opt)",
+        "line": 4478,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitMultiDI",
+        "signature": "WaitMultiDI(mode, id, status, maxtime, opt)",
+        "line": 4507,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitToolDI",
+        "signature": "WaitToolDI(id, status, maxtime, opt)",
+        "line": 4536,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAI",
+        "signature": "GetAI(id, block=0)",
+        "line": 4564,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetToolAI",
+        "signature": "GetToolAI(id, block=0)",
+        "line": 4592,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxlePointRecordBtnState",
+        "signature": "GetAxlePointRecordBtnState()",
+        "line": 4616,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetToolDO",
+        "signature": "GetToolDO()",
+        "line": 4647,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDO",
+        "signature": "GetDO()",
+        "line": 4669,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitAI",
+        "signature": "WaitAI(id, sign, value, maxtime, opt)",
+        "line": 4695,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitToolAI",
+        "signature": "WaitToolAI(id, sign, value, maxtime, opt)",
+        "line": 4725,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetSpeed",
+        "signature": "SetSpeed(vel)",
+        "line": 4755,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetSysVarValue",
+        "signature": "SetSysVarValue(id, value)",
+        "line": 4778,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolPoint",
+        "signature": "SetToolPoint(point_num)",
+        "line": 4801,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeTool",
+        "signature": "ComputeTool()",
+        "line": 4824,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTcp4RefPoint",
+        "signature": "SetTcp4RefPoint(point_num)",
+        "line": 4849,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeTcp4",
+        "signature": "ComputeTcp4()",
+        "line": 4872,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolCoord",
+        "signature": "SetToolCoord(id, t_coord, type, install, toolID, loadNum)",
+        "line": 4902,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolList",
+        "signature": "SetToolList(id, t_coord, type, install, loadNum)",
+        "line": 4933,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExTCPPoint",
+        "signature": "SetExTCPPoint(point_num)",
+        "line": 4959,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeExTCF",
+        "signature": "ComputeExTCF()",
+        "line": 4982,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExToolCoord",
+        "signature": "SetExToolCoord(id, etcp, etool)",
+        "line": 5009,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExToolList",
+        "signature": "SetExToolList(id, etcp, etool)",
+        "line": 5035,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWObjCoordPoint",
+        "signature": "SetWObjCoordPoint(point_num)",
+        "line": 5059,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeWObjCoord",
+        "signature": "ComputeWObjCoord(method, refFrame)",
+        "line": 5083,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWObjCoord",
+        "signature": "SetWObjCoord(id, coord, refFrame)",
+        "line": 5112,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWObjList",
+        "signature": "SetWObjList(id, coord, refFrame)",
+        "line": 5138,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLoadWeight",
+        "signature": "SetLoadWeight(loadNum, weight)",
+        "line": 5163,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRobotInstallPos",
+        "signature": "SetRobotInstallPos(method)",
+        "line": 5186,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRobotInstallAngle",
+        "signature": "SetRobotInstallAngle(yangle, zangle)",
+        "line": 5209,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLoadCoord",
+        "signature": "SetLoadCoord(x, y, z, loadNum=0)",
+        "line": 5235,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitMs",
+        "signature": "WaitMs(t_ms)",
+        "line": 5260,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAnticollision",
+        "signature": "SetAnticollision(mode, level, config)",
+        "line": 5288,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetCollisionStrategy",
+        "signature": "SetCollisionStrategy(strategy, safeTime=1000, safeDistance=100, safeVel=250, safetyMargin=[10, 10, 10, 10, 10, 10])",
+        "line": 5316,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLimitPositive",
+        "signature": "SetLimitPositive(p_limit)",
+        "line": 5343,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLimitNegative",
+        "signature": "SetLimitNegative(n_limit)",
+        "line": 5365,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ResetAllError",
+        "signature": "ResetAllError()",
+        "line": 5387,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FrictionCompensationOnOff",
+        "signature": "FrictionCompensationOnOff(state)",
+        "line": 5408,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetFrictionValue_level",
+        "signature": "SetFrictionValue_level(coeff)",
+        "line": 5430,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetFrictionValue_wall",
+        "signature": "SetFrictionValue_wall(coeff)",
+        "line": 5452,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetFrictionValue_ceiling",
+        "signature": "SetFrictionValue_ceiling(coeff)",
+        "line": 5474,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetFrictionValue_freedom",
+        "signature": "SetFrictionValue_freedom(coeff)",
+        "line": 5496,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotInstallAngle",
+        "signature": "GetRobotInstallAngle()",
+        "line": 5523,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSysVarValue",
+        "signature": "GetSysVarValue(id)",
+        "line": 5549,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualJointPosDegree",
+        "signature": "GetActualJointPosDegree(flag=1)",
+        "line": 5576,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualJointPosRadian",
+        "signature": "GetActualJointPosRadian(flag=1)",
+        "line": 5598,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualJointSpeedsDegree",
+        "signature": "GetActualJointSpeedsDegree(flag=1)",
+        "line": 5625,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualJointAccDegree",
+        "signature": "GetActualJointAccDegree(flag=1)",
+        "line": 5649,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTargetTCPCompositeSpeed",
+        "signature": "GetTargetTCPCompositeSpeed(flag=1)",
+        "line": 5673,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualTCPCompositeSpeed",
+        "signature": "GetActualTCPCompositeSpeed(flag=1)",
+        "line": 5695,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTargetTCPSpeed",
+        "signature": "GetTargetTCPSpeed(flag=1)",
+        "line": 5717,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualTCPSpeed",
+        "signature": "GetActualTCPSpeed(flag=1)",
+        "line": 5742,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualTCPPose",
+        "signature": "GetActualTCPPose(flag=1)",
+        "line": 5767,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualTCPNum",
+        "signature": "GetActualTCPNum(flag=1)",
+        "line": 5790,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualWObjNum",
+        "signature": "GetActualWObjNum(flag=1)",
+        "line": 5812,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetActualToolFlangePose",
+        "signature": "GetActualToolFlangePose(flag=1)",
+        "line": 5834,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetInverseKin",
+        "signature": "GetInverseKin(type, desc_pos, config=-1)",
+        "line": 5861,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetInverseKinRef",
+        "signature": "GetInverseKinRef(type, desc_pos, joint_pos_ref)",
+        "line": 5892,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetInverseKinHasSolution",
+        "signature": "GetInverseKinHasSolution(type, desc_pos, joint_pos_ref)",
+        "line": 5923,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetForwardKin",
+        "signature": "GetForwardKin(joint_pos)",
+        "line": 5952,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetJointTorques",
+        "signature": "GetJointTorques(flag=1)",
+        "line": 5979,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTargetPayload",
+        "signature": "GetTargetPayload(flag=1)",
+        "line": 6004,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTargetPayloadCog",
+        "signature": "GetTargetPayloadCog(flag=1)",
+        "line": 6031,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTCPOffset",
+        "signature": "GetTCPOffset(flag=1)",
+        "line": 6058,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetWObjOffset",
+        "signature": "GetWObjOffset(flag=1)",
+        "line": 6085,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetJointSoftLimitDeg",
+        "signature": "GetJointSoftLimitDeg(flag=1)",
+        "line": 6112,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSystemClock",
+        "signature": "GetSystemClock()",
+        "line": 6140,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotCurJointsConfig",
+        "signature": "GetRobotCurJointsConfig()",
+        "line": 6166,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDefaultTransVel",
+        "signature": "GetDefaultTransVel()",
+        "line": 6192,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotMotionDone",
+        "signature": "GetRobotMotionDone()",
+        "line": 6218,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotErrorCode",
+        "signature": "GetRobotErrorCode()",
+        "line": 6232,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotTeachingPoint",
+        "signature": "GetRobotTeachingPoint(name)",
+        "line": 6253,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetMotionQueueLength",
+        "signature": "GetMotionQueueLength()",
+        "line": 6286,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotEmergencyStopState",
+        "signature": "GetRobotEmergencyStopState()",
+        "line": 6307,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSafetyStopState",
+        "signature": "GetSafetyStopState()",
+        "line": 6328,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSDKComState",
+        "signature": "GetSDKComState()",
+        "line": 6350,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSSHKeygen",
+        "signature": "GetSSHKeygen()",
+        "line": 6384,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetSSHScpCmd",
+        "signature": "SetSSHScpCmd(mode, sshname, sship, usr_file_url, robot_file_url)",
+        "line": 6413,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeFileMD5",
+        "signature": "ComputeFileMD5(file_path)",
+        "line": 6440,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSoftwareVersion",
+        "signature": "GetSoftwareVersion()",
+        "line": 6469,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSlaveHardVersion",
+        "signature": "GetSlaveHardVersion()",
+        "line": 6502,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetHardwareversion",
+        "signature": "GetHardwareversion()",
+        "line": 6521,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSlaveFirmVersion",
+        "signature": "GetSlaveFirmVersion()",
+        "line": 6554,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetFirmwareVersion",
+        "signature": "GetFirmwareVersion()",
+        "line": 6573,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDHCompensation",
+        "signature": "GetDHCompensation()",
+        "line": 6599,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTPDParam",
+        "signature": "SetTPDParam(name, period_ms, type=1, di_choose=0, do_choose=0)",
+        "line": 6632,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTPDStart",
+        "signature": "SetTPDStart(name, period_ms, type=1, di_choose=0, do_choose=0)",
+        "line": 6662,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWebTPDStop",
+        "signature": "SetWebTPDStop()",
+        "line": 6688,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTPDDelete",
+        "signature": "SetTPDDelete(name)",
+        "line": 6709,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadTPD",
+        "signature": "LoadTPD(name)",
+        "line": 6731,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTPDStartPose",
+        "signature": "GetTPDStartPose(name)",
+        "line": 6754,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveTPD",
+        "signature": "MoveTPD(name, blend, ovl)",
+        "line": 6782,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadTrajectoryJ",
+        "signature": "LoadTrajectoryJ(name, ovl, opt=1)",
+        "line": 6810,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveTrajectoryJ",
+        "signature": "MoveTrajectoryJ()",
+        "line": 6834,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTrajectoryStartPose",
+        "signature": "GetTrajectoryStartPose(name)",
+        "line": 6858,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTrajectoryPointNum",
+        "signature": "GetTrajectoryPointNum()",
+        "line": 6885,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJSpeed",
+        "signature": "SetTrajectoryJSpeed(ovl, mode)",
+        "line": 6911,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJSpeed1",
+        "signature": "SetTrajectoryJSpeed1(ovl)",
+        "line": 6928,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJSpeed3",
+        "signature": "SetTrajectoryJSpeed3(ovl, mode, status)",
+        "line": 6944,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJForceTorque",
+        "signature": "SetTrajectoryJForceTorque(ft)",
+        "line": 6967,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJForceFx",
+        "signature": "SetTrajectoryJForceFx(fx)",
+        "line": 6989,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJForceFy",
+        "signature": "SetTrajectoryJForceFy(fy)",
+        "line": 7011,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJForceFz",
+        "signature": "SetTrajectoryJForceFz(fz)",
+        "line": 7033,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJTorqueTx",
+        "signature": "SetTrajectoryJTorqueTx(tx)",
+        "line": 7055,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJTorqueTy",
+        "signature": "SetTrajectoryJTorqueTy(ty)",
+        "line": 7077,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTrajectoryJTorqueTz",
+        "signature": "SetTrajectoryJTorqueTz(tz)",
+        "line": 7099,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadDefaultProgConfig",
+        "signature": "LoadDefaultProgConfig(flag, program_name)",
+        "line": 7126,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ProgramLoad",
+        "signature": "ProgramLoad(program_name)",
+        "line": 7149,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetCurrentLine",
+        "signature": "GetCurrentLine()",
+        "line": 7172,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ProgramRun",
+        "signature": "ProgramRun()",
+        "line": 7197,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ProgramPause",
+        "signature": "ProgramPause()",
+        "line": 7220,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ProgramResume",
+        "signature": "ProgramResume()",
+        "line": 7241,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ProgramStop",
+        "signature": "ProgramStop()",
+        "line": 7264,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetProgramState",
+        "signature": "GetProgramState()",
+        "line": 7286,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLoadedProgram",
+        "signature": "GetLoadedProgram()",
+        "line": 7307,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperConfig",
+        "signature": "GetGripperConfig()",
+        "line": 7341,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ActGripper",
+        "signature": "ActGripper(index, action)",
+        "line": 7367,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveGripper",
+        "signature": "MoveGripper(index, pos, vel, force, maxtime, block, type, rotNum, rotVel, rotTorque)",
+        "line": 7399,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperMotionDone",
+        "signature": "GetGripperMotionDone()",
+        "line": 7433,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetGripperConfig",
+        "signature": "SetGripperConfig(company, device, softversion=0, bus=0)",
+        "line": 7461,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputePrePick",
+        "signature": "ComputePrePick(desc_pos, zlength, zangle)",
+        "line": 7489,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputePostPick",
+        "signature": "ComputePostPick(desc_pos, zlength, zangle)",
+        "line": 7520,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_GetConfig",
+        "signature": "FT_GetConfig()",
+        "line": 7557,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_SetConfig",
+        "signature": "FT_SetConfig(company, device, softversion=0, bus=0)",
+        "line": 7585,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_Activate",
+        "signature": "FT_Activate(state)",
+        "line": 7610,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_SetZero",
+        "signature": "FT_SetZero(state)",
+        "line": 7632,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_SetRCS",
+        "signature": "FT_SetRCS(ref, coord=[0, 0, 0, 0, 0, 0])",
+        "line": 7655,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_PdIdenCompute",
+        "signature": "FT_PdIdenCompute()",
+        "line": 7679,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_PdIdenRecord",
+        "signature": "FT_PdIdenRecord(tool_id)",
+        "line": 7704,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_PdCogIdenCompute",
+        "signature": "FT_PdCogIdenCompute()",
+        "line": 7727,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_PdCogIdenRecord",
+        "signature": "FT_PdCogIdenRecord(tool_id, index)",
+        "line": 7753,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_GetForceTorqueRCS",
+        "signature": "FT_GetForceTorqueRCS()",
+        "line": 7777,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_GetForceTorqueOrigin",
+        "signature": "FT_GetForceTorqueOrigin()",
+        "line": 7801,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_Guard",
+        "signature": "FT_Guard(flag, sensor_num, select, force_torque, max_threshold, min_threshold)",
+        "line": 7831,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_Control",
+        "signature": "FT_Control(flag, sensor_id, select, ft, ft_pid, adj_sign, ILC_sign, max_dis, max_ang, M=None, B=None, threshold=[0.2, 0.2], adjustCoeff=[1.0, 1.0], polishRadio=0, filter_Sign=0, posAdapt_sign=0, isNoBlock=0)",
+        "line": 7874,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_SpiralSearch",
+        "signature": "FT_SpiralSearch(rcs, ft, dr=0.7, max_t_ms=60000, max_vel=5)",
+        "line": 7926,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_RotInsertion",
+        "signature": "FT_RotInsertion(rcs, angVelRot, ft, max_angle, orn, max_angAcc=0, rotorn=1, strategy=0)",
+        "line": 7959,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_LinInsertion",
+        "signature": "FT_LinInsertion(rcs, ft, disMax, linorn, lin_v=1.0, lin_a=1.0)",
+        "line": 7993,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_CalCenterStart",
+        "signature": "FT_CalCenterStart()",
+        "line": 8020,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_CalCenterEnd",
+        "signature": "FT_CalCenterEnd()",
+        "line": 8042,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_FindSurface",
+        "signature": "FT_FindSurface(rcs, dir, axis, disMax, ft, lin_v=3.0, lin_a=0.0)",
+        "line": 8073,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_ComplianceStop",
+        "signature": "FT_ComplianceStop()",
+        "line": 8100,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FT_ComplianceStart",
+        "signature": "FT_ComplianceStart(p, force)",
+        "line": 8122,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadIdentifyDynFilterInit",
+        "signature": "LoadIdentifyDynFilterInit()",
+        "line": 8145,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadIdentifyDynVarInit",
+        "signature": "LoadIdentifyDynVarInit()",
+        "line": 8166,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadIdentifyMain",
+        "signature": "LoadIdentifyMain(joint_torque, joint_pos, t)",
+        "line": 8189,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadIdentifyGetResult",
+        "signature": "LoadIdentifyGetResult(gain)",
+        "line": 8215,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorStartEnd",
+        "signature": "ConveyorStartEnd(status)",
+        "line": 8245,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorPointIORecord",
+        "signature": "ConveyorPointIORecord()",
+        "line": 8269,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorPointARecord",
+        "signature": "ConveyorPointARecord()",
+        "line": 8290,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorRefPointRecord",
+        "signature": "ConveyorRefPointRecord()",
+        "line": 8311,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorPointBRecord",
+        "signature": "ConveyorPointBRecord()",
+        "line": 8332,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorIODetect",
+        "signature": "ConveyorIODetect(max_t)",
+        "line": 8353,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorGetTrackData",
+        "signature": "ConveyorGetTrackData(mode)",
+        "line": 8375,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorTrackStart",
+        "signature": "ConveyorTrackStart(status)",
+        "line": 8397,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorTrackEnd",
+        "signature": "ConveyorTrackEnd()",
+        "line": 8419,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorSetParam",
+        "signature": "ConveyorSetParam(para, followType=0, startDis=0, endDis=100)",
+        "line": 8448,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorCatchPointComp",
+        "signature": "ConveyorCatchPointComp(cmp)",
+        "line": 8475,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorTrackMoveL",
+        "signature": "ConveyorTrackMoveL(name, tool, wobj, vel=20, acc=100, ovl=100, blendR=-1.0)",
+        "line": 8503,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ARCStart",
+        "signature": "ARCStart(ioType, arcNum, timeout)",
+        "line": 8539,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ARCEnd",
+        "signature": "ARCEnd(ioType, arcNum, timeout)",
+        "line": 8565,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetCurrentRelation",
+        "signature": "WeldingSetCurrentRelation(currentMin, currentMax, outputVoltageMin, outputVoltageMax, AOIndex)",
+        "line": 8593,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetVoltageRelation",
+        "signature": "WeldingSetVoltageRelation(weldVoltageMin, weldVoltageMax, outputVoltageMin, outputVoltageMax, AOIndex)",
+        "line": 8624,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingGetCurrentRelation",
+        "signature": "WeldingGetCurrentRelation()",
+        "line": 8656,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingGetVoltageRelation",
+        "signature": "WeldingGetVoltageRelation()",
+        "line": 8688,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetCurrent",
+        "signature": "WeldingSetCurrent(ioType, current, AOIndex, blend)",
+        "line": 8719,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetVoltage",
+        "signature": "WeldingSetVoltage(ioType, voltage, AOIndex, blend)",
+        "line": 8747,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveSetPara",
+        "signature": "WeaveSetPara(weaveNum, weaveType, weaveFrequency, weaveIncStayTime, weaveRange, weaveLeftRange, weaveRightRange, additionalStayTime, weaveLeftStayTime, weaveRightStayTime, weaveCircleRadio, weaveStationary, weaveYawAngle=0, weaveRotAngle=0)",
+        "line": 8785,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveOnlineSetPara",
+        "signature": "WeaveOnlineSetPara(weaveNum, weaveType, weaveFrequency, weaveIncStayTime, weaveRange, weaveLeftStayTime, weaveRightStayTime, weaveCircleRadio, weaveStationary)",
+        "line": 8833,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveStart",
+        "signature": "WeaveStart(weaveNum)",
+        "line": 8870,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveEnd",
+        "signature": "WeaveEnd(weaveNum)",
+        "line": 8895,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetForwardWireFeed",
+        "signature": "SetForwardWireFeed(ioType, wireFeed)",
+        "line": 8921,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetReverseWireFeed",
+        "signature": "SetReverseWireFeed(ioType, wireFeed)",
+        "line": 8948,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAspirated",
+        "signature": "SetAspirated(ioType, airControl)",
+        "line": 8975,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSegmentWeldPoint",
+        "signature": "GetSegmentWeldPoint(startPos, endPos, startDistance)",
+        "line": 9007,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SegmentWeldStart",
+        "signature": "SegmentWeldStart(startDesePos, endDesePos, startJPos, endJPos, weldLength, noWeldLength, weldIOType, arcNum, weldTimeout, isWeave, weaveNum, tool, user, vel=20.0, acc=0.0, ovl=100.0, blendR=-1.0, exaxis_pos=[0.0, 0.0, 0.0, 0.0], search=0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])",
+        "line": 9065,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SegmentWeldEnd",
+        "signature": "SegmentWeldEnd(ioType, arcNum, timeout)",
+        "line": 9284,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoggerInit",
+        "signature": "LoggerInit(output_model=1, file_path='', file_num=5)",
+        "line": 9312,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLoggerLevel",
+        "signature": "SetLoggerLevel(lvl=1)",
+        "line": 9326,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PointTableDownLoad",
+        "signature": "PointTableDownLoad(point_table_name, save_file_path)",
+        "line": 9343,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PointTableUpLoad",
+        "signature": "PointTableUpLoad(point_table_file_path)",
+        "line": 9409,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PointTableSwitch",
+        "signature": "PointTableSwitch(point_table_name)",
+        "line": 9479,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PointTableUpdateLua",
+        "signature": "PointTableUpdateLua(point_table_name, lua_file_name)",
+        "line": 9502,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LuaDownLoad",
+        "signature": "LuaDownLoad(fileName, savePath)",
+        "line": 9688,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LuaUpload",
+        "signature": "LuaUpload(filePath)",
+        "line": 9701,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LuaDelete",
+        "signature": "LuaDelete(fileName)",
+        "line": 9722,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLuaList",
+        "signature": "GetLuaList()",
+        "line": 9738,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetParam",
+        "signature": "AuxServoSetParam(servoId, servoCompany, servoModel, servoSoftVersion, servoResolution, axisMechTransRatio)",
+        "line": 9791,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoGetParam",
+        "signature": "AuxServoGetParam(servoId)",
+        "line": 9826,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoEnable",
+        "signature": "AuxServoEnable(servoId, status)",
+        "line": 9853,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetControlMode",
+        "signature": "AuxServoSetControlMode(servoId, mode)",
+        "line": 9877,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetTargetPos",
+        "signature": "AuxServoSetTargetPos(servoId, pos, speed, acc=100)",
+        "line": 9903,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetTargetSpeed",
+        "signature": "AuxServoSetTargetSpeed(servoId, speed, acc)",
+        "line": 9930,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetTargetTorque",
+        "signature": "AuxServoSetTargetTorque(servoId, torque)",
+        "line": 9955,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoHoming",
+        "signature": "AuxServoHoming(servoId, mode, searchVel, latchVel, acc=100)",
+        "line": 9982,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoClearError",
+        "signature": "AuxServoClearError(servoId)",
+        "line": 10008,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoGetStatus",
+        "signature": "AuxServoGetStatus(servoId)",
+        "line": 10035,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServosetStatusID",
+        "signature": "AuxServosetStatusID(servoId)",
+        "line": 10061,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExDevProtocol",
+        "signature": "SetExDevProtocol(protocol)",
+        "line": 10083,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetExDevProtocol",
+        "signature": "GetExDevProtocol()",
+        "line": 10105,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOaccScale",
+        "signature": "SetOaccScale(acc)",
+        "line": 10130,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveAOStart",
+        "signature": "MoveAOStart(AONum, maxTCPSpeed=1000, maxAOPercent=100, zeroZoneCmp=20)",
+        "line": 10155,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveAOStop",
+        "signature": "MoveAOStop()",
+        "line": 10179,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToolAOStart",
+        "signature": "MoveToolAOStart(AONum, maxTCPSpeed=1000, maxAOPercent=100, zeroZoneCmp=20)",
+        "line": 10203,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToolAOStop",
+        "signature": "MoveToolAOStop()",
+        "line": 10227,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtDevSetUDPComParam",
+        "signature": "ExtDevSetUDPComParam(ip, port, period, lossPkgTime, lossPkgNum, disconnectTime, reconnectEnable, reconnectPeriod, reconnectNum, selfConnect)",
+        "line": 10257,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtDevGetUDPComParam",
+        "signature": "ExtDevGetUDPComParam()",
+        "line": 10301,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtDevLoadUDPDriver",
+        "signature": "ExtDevLoadUDPDriver()",
+        "line": 10325,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtDevUnloadUDPDriver",
+        "signature": "ExtDevUnloadUDPDriver()",
+        "line": 10345,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtDevUDPClientComReset",
+        "signature": "ExtDevUDPClientComReset()",
+        "line": 10365,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtDevUDPClientComClose",
+        "signature": "ExtDevUDPClientComClose()",
+        "line": 10385,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRobotPosToAxis",
+        "signature": "SetRobotPosToAxis(installType)",
+        "line": 10406,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxisDHParaConfig",
+        "signature": "SetAxisDHParaConfig(axisConfig, axisDHd1, axisDHd2, axisDHd3, axisDHd4, axisDHa1, axisDHa2, axisDHa3, axisDHa4)",
+        "line": 10436,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisParamConfig",
+        "signature": "ExtAxisParamConfig(axisId, axisType, axisDirection, axisMax, axisMin, axisVel, axisAcc, axisLead, encResolution, axisOffect, axisCompany, axisModel, axisEncType)",
+        "line": 10481,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetExAxisDriverConfig",
+        "signature": "GetExAxisDriverConfig(axisId)",
+        "line": 10522,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisSetRefPoint",
+        "signature": "ExtAxisSetRefPoint(pointNum)",
+        "line": 10547,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisComputeECoordSys",
+        "signature": "ExtAxisComputeECoordSys()",
+        "line": 10569,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRefPointInExAxisEnd",
+        "signature": "SetRefPointInExAxisEnd(pos)",
+        "line": 10590,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PositionorSetRefPoint",
+        "signature": "PositionorSetRefPoint(pointNum)",
+        "line": 10612,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PositionorComputeECoordSys",
+        "signature": "PositionorComputeECoordSys()",
+        "line": 10634,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisActiveECoordSys",
+        "signature": "ExtAxisActiveECoordSys(axisCoordNum, toolNum, coord, calibFlag)",
+        "line": 10662,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisServoOn",
+        "signature": "ExtAxisServoOn(axisID, status)",
+        "line": 10689,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisSetHoming",
+        "signature": "ExtAxisSetHoming(axisID, mode, searchVel, latchVel)",
+        "line": 10715,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisStartJog",
+        "signature": "ExtAxisStartJog(axisID, direction, vel, acc, maxDistance)",
+        "line": 10744,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisStopJog",
+        "signature": "ExtAxisStopJog(axisID)",
+        "line": 10772,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAuxDO",
+        "signature": "SetAuxDO(DONum, bOpen, smooth, block)",
+        "line": 10792,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAuxAO",
+        "signature": "SetAuxAO(AONum, value, block)",
+        "line": 10825,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAuxDIFilterTime",
+        "signature": "SetAuxDIFilterTime(filterTime)",
+        "line": 10851,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAuxAIFilterTime",
+        "signature": "SetAuxAIFilterTime(AINum, filterTime)",
+        "line": 10874,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitAuxDI",
+        "signature": "WaitAuxDI(DINum, bOpen, time, errorAlarm)",
+        "line": 10900,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitAuxAI",
+        "signature": "WaitAuxAI(AINum, sign, value, time, errorAlarm)",
+        "line": 10931,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAuxDI",
+        "signature": "GetAuxDI(DINum, isNoBlock)",
+        "line": 10960,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAuxAI",
+        "signature": "GetAuxAI(AINum, isNoBlock)",
+        "line": 10989,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisMove",
+        "signature": "ExtAxisMove(pos, ovl, blend=-1)",
+        "line": 11018,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisSyncMoveJ",
+        "signature": "ExtAxisSyncMoveJ(joint_pos, tool, user, exaxis_pos, desc_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel=20.0, acc=0.0, ovl=100.0, blendT=-1.0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])",
+        "line": 11054,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisSyncMoveL",
+        "signature": "ExtAxisSyncMoveL(desc_pos, tool, user, exaxis_pos, joint_pos, vel=20.0, acc=0.0, ovl=100.0, blendR=-1.0, search=0, offset_flag=0, offset_pos=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], config=-1)",
+        "line": 11115,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisSyncMoveC",
+        "signature": "ExtAxisSyncMoveC(desc_pos_p, tool_p, user_p, exaxis_pos_p, desc_pos_t, tool_t, user_t, exaxis_pos_t, joint_pos_p=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], joint_pos_t=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel_p=20.0, acc_p=100.0, offset_flag_p=0, offset_pos_p=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], vel_t=20.0, acc_t=100.0, offset_flag_t=0, offset_pos_t=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0], ovl=100.0, blendR=-1.0, config=-1)",
+        "line": 11186,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WireSearchStart",
+        "signature": "WireSearchStart(refPos, searchVel, searchDis, autoBackFlag, autoBackVel, autoBackDis, offectFlag)",
+        "line": 11270,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WireSearchEnd",
+        "signature": "WireSearchEnd(refPos, searchVel, searchDis, autoBackFlag, autoBackVel, autoBackDis, offectFlag)",
+        "line": 11305,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetWireSearchOffset",
+        "signature": "GetWireSearchOffset(seamType, method, varNameRef, varNameRes)",
+        "line": 11339,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WireSearchWait",
+        "signature": "WireSearchWait(varname)",
+        "line": 11376,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetPointToDatabase",
+        "signature": "SetPointToDatabase(varName, pos)",
+        "line": 11399,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceControl",
+        "signature": "ArcWeldTraceControl(flag, delaytime, isLeftRight, klr, tStartLr, stepMaxLr, sumMaxLr, isUpLow, kud, tStartUd, stepMaxUd, sumMaxUd, axisSelect, referenceType, referSampleStartUd, referSampleCountUd, referenceCurrent, offsetType, offsetParameter)",
+        "line": 11441,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceExtAIChannelConfig",
+        "signature": "ArcWeldTraceExtAIChannelConfig(channel)",
+        "line": 11490,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "EndForceDragControl",
+        "signature": "EndForceDragControl(status, asaptiveFlag, interfereDragFlag, ingularityConstraintsFlag, forceCollisionFlag, M, B, K, F, Fmax, Vmax)",
+        "line": 11522,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetForceSensorDragAutoFlag",
+        "signature": "SetForceSensorDragAutoFlag(status)",
+        "line": 11557,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ForceAndJointImpedanceStartStop",
+        "signature": "ForceAndJointImpedanceStartStop(status, impedanceFlag, lamdeDain, KGain, BGain, dragMaxTcpVel, dragMaxTcpOriVel)",
+        "line": 11585,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetForceAndTorqueDragState",
+        "signature": "GetForceAndTorqueDragState()",
+        "line": 11618,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetForceSensorPayload",
+        "signature": "SetForceSensorPayload(weight)",
+        "line": 11643,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetForceSensorPayloadCog",
+        "signature": "SetForceSensorPayloadCog(x, y, z)",
+        "line": 11667,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetForceSensorPayload",
+        "signature": "GetForceSensorPayload()",
+        "line": 11691,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetForceSensorPayloadCog",
+        "signature": "GetForceSensorPayloadCog()",
+        "line": 11718,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ForceSensorAutoComputeLoad",
+        "signature": "ForceSensorAutoComputeLoad()",
+        "line": 11744,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ForceSensorSetSaveDataFlag",
+        "signature": "ForceSensorSetSaveDataFlag(recordCount)",
+        "line": 11803,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ForceSensorComputeLoad",
+        "signature": "ForceSensorComputeLoad()",
+        "line": 11825,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AxleSensorConfig",
+        "signature": "AxleSensorConfig(idCompany, idDevice, idSoftware, idBus)",
+        "line": 11853,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AxleSensorConfigGet",
+        "signature": "AxleSensorConfigGet()",
+        "line": 11880,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AxleSensorActivate",
+        "signature": "AxleSensorActivate(actFlag)",
+        "line": 11905,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AxleSensorRegWrite",
+        "signature": "AxleSensorRegWrite(devAddr, regHAddr, regLAddr, regNum, data1, data2, isNoBlock)",
+        "line": 11933,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetCtlBoxDO",
+        "signature": "SetOutputResetCtlBoxDO(resetFlag, reloadFlag)",
+        "line": 11962,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetCtlBoxAO",
+        "signature": "SetOutputResetCtlBoxAO(resetFlag, reloadFlag)",
+        "line": 11986,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetAxleDO",
+        "signature": "SetOutputResetAxleDO(resetFlag, reloadFlag)",
+        "line": 12010,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetAxleAO",
+        "signature": "SetOutputResetAxleAO(resetFlag, reloadFlag)",
+        "line": 12034,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetExtDO",
+        "signature": "SetOutputResetExtDO(resetFlag, reloadFlag)",
+        "line": 12058,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetExtAO",
+        "signature": "SetOutputResetExtAO(resetFlag, reloadFlag)",
+        "line": 12082,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetOutputResetSmartToolDO",
+        "signature": "SetOutputResetSmartToolDO(resetFlag, reloadFlag)",
+        "line": 12106,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveStartSim",
+        "signature": "WeaveStartSim(weaveNum)",
+        "line": 12129,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveEndSim",
+        "signature": "WeaveEndSim(weaveNum)",
+        "line": 12151,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveInspectStart",
+        "signature": "WeaveInspectStart(weaveNum)",
+        "line": 12173,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveInspectEnd",
+        "signature": "WeaveInspectEnd(weaveNum)",
+        "line": 12195,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetProcessParam",
+        "signature": "WeldingSetProcessParam(id, startCurrent, startVoltage, startTime, weldCurrent, weldVoltage, endCurrent, endVoltage, endTime)",
+        "line": 12225,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingGetProcessParam",
+        "signature": "WeldingGetProcessParam(id)",
+        "line": 12266,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAirControlExtDoNum",
+        "signature": "SetAirControlExtDoNum(DONum)",
+        "line": 12292,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetArcStartExtDoNum",
+        "signature": "SetArcStartExtDoNum(DONum)",
+        "line": 12314,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWireReverseFeedExtDoNum",
+        "signature": "SetWireReverseFeedExtDoNum(DONum)",
+        "line": 12336,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWireForwardFeedExtDoNum",
+        "signature": "SetWireForwardFeedExtDoNum(DONum)",
+        "line": 12358,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetArcDoneExtDiNum",
+        "signature": "SetArcDoneExtDiNum(DINum)",
+        "line": 12380,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWeldReadyExtDiNum",
+        "signature": "SetWeldReadyExtDiNum(DINum)",
+        "line": 12402,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExtDIWeldBreakOffRecover",
+        "signature": "SetExtDIWeldBreakOffRecover(reWeldDINum, abortWeldDINum)",
+        "line": 12425,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetCollisionDetectionMethod",
+        "signature": "SetCollisionDetectionMethod(method, thresholdMode)",
+        "line": 12449,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetStaticCollisionOnOff",
+        "signature": "SetStaticCollisionOnOff(status)",
+        "line": 12472,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetPowerLimit",
+        "signature": "SetPowerLimit(status, power)",
+        "line": 12495,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRobotRealtimeStateSamplePeriod",
+        "signature": "SetRobotRealtimeStateSamplePeriod(period)",
+        "line": 12518,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotRealtimeStateSamplePeriod",
+        "signature": "GetRobotRealtimeStateSamplePeriod()",
+        "line": 12541,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetJointDriverTorque",
+        "signature": "GetJointDriverTorque()",
+        "line": 12567,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetJointDriverTemperature",
+        "signature": "GetJointDriverTemperature()",
+        "line": 12585,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceReplayStart",
+        "signature": "ArcWeldTraceReplayStart()",
+        "line": 12599,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceReplayEnd",
+        "signature": "ArcWeldTraceReplayEnd()",
+        "line": 12620,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MultilayerOffsetTrsfToBase",
+        "signature": "MultilayerOffsetTrsfToBase(pointo, pointX, pointZ, dx, dz, dry)",
+        "line": 12647,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AngularSpeedStart",
+        "signature": "AngularSpeedStart(ratio)",
+        "line": 12680,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AngularSpeedEnd",
+        "signature": "AngularSpeedEnd()",
+        "line": 12701,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SoftwareUpgrade",
+        "signature": "SoftwareUpgrade(filePath, block)",
+        "line": 12723,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSoftwareUpgradeState",
+        "signature": "GetSoftwareUpgradeState()",
+        "line": 12763,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetAcc",
+        "signature": "AuxServoSetAcc(acc, dec)",
+        "line": 12779,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoSetEmergencyStopAcc",
+        "signature": "AuxServoSetEmergencyStopAcc(acc, dec)",
+        "line": 12803,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoGetEmergencyStopAcc",
+        "signature": "AuxServoGetEmergencyStopAcc()",
+        "line": 12827,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AuxServoGetAcc",
+        "signature": "AuxServoGetAcc()",
+        "line": 12852,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxleCommunicationParam",
+        "signature": "GetAxleCommunicationParam()",
+        "line": 12882,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxleCommunicationParam",
+        "signature": "SetAxleCommunicationParam(baudRate, dataBit, stopBit, verify, timeout, timeoutTimes, period)",
+        "line": 12912,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxleFileType",
+        "signature": "SetAxleFileType(type)",
+        "line": 12941,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxleLuaEnable",
+        "signature": "SetAxleLuaEnable(enable)",
+        "line": 12963,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRecoverAxleLuaErr",
+        "signature": "SetRecoverAxleLuaErr(enable)",
+        "line": 12985,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxleLuaEnableStatus",
+        "signature": "GetAxleLuaEnableStatus()",
+        "line": 13006,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxleLuaEnableDeviceType",
+        "signature": "SetAxleLuaEnableDeviceType(forceSensorEnable, gripperEnable, IOEnable, dexhandEnable)",
+        "line": 13033,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxleLuaEnableDeviceType",
+        "signature": "GetAxleLuaEnableDeviceType()",
+        "line": 13060,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxleLuaEnableDevice",
+        "signature": "GetAxleLuaEnableDevice()",
+        "line": 13087,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxleLuaGripperFunc",
+        "signature": "SetAxleLuaGripperFunc(id, func)",
+        "line": 13124,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxleLuaGripperFunc",
+        "signature": "GetAxleLuaGripperFunc(id)",
+        "line": 13151,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetCtrlOpenLUAName",
+        "signature": "SetCtrlOpenLUAName(id, name)",
+        "line": 13184,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetCtrlOpenLUAName",
+        "signature": "GetCtrlOpenLUAName()",
+        "line": 13207,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadCtrlOpenLUA",
+        "signature": "LoadCtrlOpenLUA(id)",
+        "line": 13236,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "UnloadCtrlOpenLUA",
+        "signature": "UnloadCtrlOpenLUA(id)",
+        "line": 13258,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetCtrlOpenLuaErrCode",
+        "signature": "SetCtrlOpenLuaErrCode(id)",
+        "line": 13280,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SlaveFileWrite",
+        "signature": "SlaveFileWrite(type, slaveID, fileName)",
+        "line": 13304,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetSysServoBootMode",
+        "signature": "SetSysServoBootMode()",
+        "line": 13327,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AxleLuaUpload",
+        "signature": "AxleLuaUpload(filePath)",
+        "line": 13348,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TractorEnable",
+        "signature": "TractorEnable(enable)",
+        "line": 13382,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TractorHoming",
+        "signature": "TractorHoming()",
+        "line": 13403,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TractorMoveL",
+        "signature": "TractorMoveL(distance, vel)",
+        "line": 13425,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TractorMoveC",
+        "signature": "TractorMoveC(radio, angle, vel)",
+        "line": 13452,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TractorStop",
+        "signature": "TractorStop()",
+        "line": 13477,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWireSearchExtDIONum",
+        "signature": "SetWireSearchExtDIONum(searchDoneDINum, searchStartDONum)",
+        "line": 13499,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWeldMachineCtrlModeExtDoNum",
+        "signature": "SetWeldMachineCtrlModeExtDoNum(DONum)",
+        "line": 13522,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWeldMachineCtrlMode",
+        "signature": "SetWeldMachineCtrlMode(mode, ioType=1)",
+        "line": 13545,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CloseRPC",
+        "signature": "CloseRPC()",
+        "line": 13567,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SingularAvoidStart",
+        "signature": "SingularAvoidStart(protectMode, minShoulderPos=100, minElbowPos=50, minWristPos=10)",
+        "line": 13628,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SingularAvoidEnd",
+        "signature": "SingularAvoidEnd()",
+        "line": 13652,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperRotNum",
+        "signature": "GetGripperRotNum()",
+        "line": 13674,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperRotSpeed",
+        "signature": "GetGripperRotSpeed()",
+        "line": 13689,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperRotTorque",
+        "signature": "GetGripperRotTorque()",
+        "line": 13704,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PtpFIRPlanningStart",
+        "signature": "PtpFIRPlanningStart(maxAcc, maxJek)",
+        "line": 13719,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PtpFIRPlanningEnd",
+        "signature": "PtpFIRPlanningEnd()",
+        "line": 13741,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TrajectoryJUpLoad",
+        "signature": "TrajectoryJUpLoad(filePath)",
+        "line": 13762,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TrajectoryJDelete",
+        "signature": "TrajectoryJDelete(fileName)",
+        "line": 13778,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LinArcFIRPlanningStart",
+        "signature": "LinArcFIRPlanningStart(maxAccLin, maxAccDeg, maxJerkLin, maxJerkDeg)",
+        "line": 13797,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LinArcFIRPlanningEnd",
+        "signature": "LinArcFIRPlanningEnd()",
+        "line": 13821,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ToolTrsfStart",
+        "signature": "ToolTrsfStart(toolNum)",
+        "line": 13843,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ToolTrsfEnd",
+        "signature": "ToolTrsfEnd()",
+        "line": 13864,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeToolCoordWithPoints",
+        "signature": "ComputeToolCoordWithPoints(method, pos)",
+        "line": 13889,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeWObjCoordWithPoints",
+        "signature": "ComputeWObjCoordWithPoints(method, pos, refFrame)",
+        "line": 13930,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetCheckArcInterruptionParam",
+        "signature": "WeldingSetCheckArcInterruptionParam(checkEnable, arcInterruptTimeLength)",
+        "line": 13961,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingGetCheckArcInterruptionParam",
+        "signature": "WeldingGetCheckArcInterruptionParam()",
+        "line": 13985,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetReWeldAfterBreakOffParam",
+        "signature": "WeldingSetReWeldAfterBreakOffParam(enable, length, velocity, moveType)",
+        "line": 14012,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingGetReWeldAfterBreakOffParam",
+        "signature": "WeldingGetReWeldAfterBreakOffParam()",
+        "line": 14040,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingStartReWeldAfterBreakOff",
+        "signature": "WeldingStartReWeldAfterBreakOff()",
+        "line": 14063,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingAbortWeldAfterBreakOff",
+        "signature": "WeldingAbortWeldAfterBreakOff()",
+        "line": 14083,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserSensorRecord",
+        "signature": "LaserSensorRecord(status, delayMode, delayTime, delayDisExAxisNum, delayDis, sensitivePara, speed)",
+        "line": 14111,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingLaserOn",
+        "signature": "LaserTrackingLaserOn(weldId)",
+        "line": 14140,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingLaserOff",
+        "signature": "LaserTrackingLaserOff()",
+        "line": 14161,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingTrackOn",
+        "signature": "LaserTrackingTrackOn(coordId)",
+        "line": 14182,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingTrackOff",
+        "signature": "LaserTrackingTrackOff()",
+        "line": 14203,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingSearchStart",
+        "signature": "LaserTrackingSearchStart(direction, directionPoint, vel, distance, timeout, posSensorNum)",
+        "line": 14229,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingSearchStop",
+        "signature": "LaserTrackingSearchStop()",
+        "line": 14256,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveChangeStart",
+        "signature": "WeaveChangeStart(weaveChangeFlag, weaveNum, velStart, velEnd)",
+        "line": 14282,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeaveChangeEnd",
+        "signature": "WeaveChangeEnd()",
+        "line": 14306,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadTrajectoryLA",
+        "signature": "LoadTrajectoryLA(name, mode, errorLim, type, precision, vamx, amax, jmax, flag)",
+        "line": 14337,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveTrajectoryLA",
+        "signature": "MoveTrajectoryLA()",
+        "line": 14369,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CustomCollisionDetectionStart",
+        "signature": "CustomCollisionDetectionStart(flag, jointDetectionThreshould, tcpDetectionThreshould, block)",
+        "line": 14396,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CustomCollisionDetectionEnd",
+        "signature": "CustomCollisionDetectionEnd()",
+        "line": 14423,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotRealTimeState",
+        "signature": "GetRobotRealTimeState()",
+        "line": 14448,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "StopMove",
+        "signature": "StopMove()",
+        "line": 14462,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AccSmoothStart",
+        "signature": "AccSmoothStart(saveFlag)",
+        "line": 14478,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AccSmoothEnd",
+        "signature": "AccSmoothEnd(saveFlag)",
+        "line": 14504,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "RbLogDownload",
+        "signature": "RbLogDownload(savePath)",
+        "line": 14532,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AllDataSourceDownload",
+        "signature": "AllDataSourceDownload(savePath)",
+        "line": 14559,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "DataPackageDownload",
+        "signature": "DataPackageDownload(savePath)",
+        "line": 14586,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotSN",
+        "signature": "GetRobotSN()",
+        "line": 14613,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ShutDownRobotOS",
+        "signature": "ShutDownRobotOS()",
+        "line": 14638,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorComDetect",
+        "signature": "ConveyorComDetect(timeout)",
+        "line": 14661,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ConveyorComDetectTrigger",
+        "signature": "ConveyorComDetectTrigger()",
+        "line": 14685,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceAIChannelCurrent",
+        "signature": "ArcWeldTraceAIChannelCurrent(channel)",
+        "line": 14717,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceAIChannelVoltage",
+        "signature": "ArcWeldTraceAIChannelVoltage(channel)",
+        "line": 14740,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceCurrentPara",
+        "signature": "ArcWeldTraceCurrentPara(AILow=0, AIHigh=10, currentLow=0, currentHigh=100)",
+        "line": 14766,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ArcWeldTraceVoltagePara",
+        "signature": "ArcWeldTraceVoltagePara(AILow=0, AIHigh=10, voltageLow=0, voltageHigh=100)",
+        "line": 14795,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetVoltageGradualChangeStart",
+        "signature": "WeldingSetVoltageGradualChangeStart(IOType, voltageStart, voltageEnd, AOIndex, blend)",
+        "line": 14826,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetVoltageGradualChangeEnd",
+        "signature": "WeldingSetVoltageGradualChangeEnd()",
+        "line": 14852,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetCurrentGradualChangeStart",
+        "signature": "WeldingSetCurrentGradualChangeStart(IOType, currentStart, currentEnd, AOIndex, blend)",
+        "line": 14878,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WeldingSetCurrentGradualChangeEnd",
+        "signature": "WeldingSetCurrentGradualChangeEnd()",
+        "line": 14904,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSmarttoolBtnState",
+        "signature": "GetSmarttoolBtnState()",
+        "line": 14927,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisGetCoord",
+        "signature": "ExtAxisGetCoord()",
+        "line": 14942,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperActivateStatus",
+        "signature": "GetGripperActivateStatus()",
+        "line": 14971,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperCurPosition",
+        "signature": "GetGripperCurPosition()",
+        "line": 14987,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperCurCurrent",
+        "signature": "GetGripperCurCurrent()",
+        "line": 15003,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperVoltage",
+        "signature": "GetGripperVoltage()",
+        "line": 15019,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperTemp",
+        "signature": "GetGripperTemp()",
+        "line": 15035,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetGripperCurSpeed",
+        "signature": "GetGripperCurSpeed()",
+        "line": 15051,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWideBoxTempFanMonitorParam",
+        "signature": "SetWideBoxTempFanMonitorParam(enable, period)",
+        "line": 15068,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetWideBoxTempFanMonitorParam",
+        "signature": "GetWideBoxTempFanMonitorParam()",
+        "line": 15093,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetFocusCalibPoint",
+        "signature": "SetFocusCalibPoint(pointNum, point)",
+        "line": 15121,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ComputeFocusCalib",
+        "signature": "ComputeFocusCalib(pointNum)",
+        "line": 15146,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FocusStart",
+        "signature": "FocusStart(kp=50.0, kpredic=19.0, aMax=1440, vMax=180, type=0)",
+        "line": 15175,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FocusEnd",
+        "signature": "FocusEnd()",
+        "line": 15199,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetFocusPosition",
+        "signature": "SetFocusPosition(pos)",
+        "line": 15219,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetEncoderUpgrade",
+        "signature": "SetEncoderUpgrade(path)",
+        "line": 15241,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetJointFirmwareUpgrade",
+        "signature": "SetJointFirmwareUpgrade(type, path)",
+        "line": 15263,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetCtrlFirmwareUpgrade",
+        "signature": "SetCtrlFirmwareUpgrade(type, path)",
+        "line": 15287,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetEndFirmwareUpgrade",
+        "signature": "SetEndFirmwareUpgrade(type, path)",
+        "line": 15309,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "JointAllParamUpgrade",
+        "signature": "JointAllParamUpgrade(path)",
+        "line": 15330,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserRecordPoint",
+        "signature": "LaserRecordPoint(coordID)",
+        "line": 15354,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExAxisRobotPlan",
+        "signature": "SetExAxisRobotPlan(strategy)",
+        "line": 15387,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetFieldBusConfig",
+        "signature": "GetFieldBusConfig()",
+        "line": 15411,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FieldBusSlaveWriteDO",
+        "signature": "FieldBusSlaveWriteDO(DOIndex, wirteNum, status)",
+        "line": 15437,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FieldBusSlaveWriteAO",
+        "signature": "FieldBusSlaveWriteAO(AOIndex, wirteNum, status)",
+        "line": 15462,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FieldBusSlaveReadDI",
+        "signature": "FieldBusSlaveReadDI(DOIndex, readeNum)",
+        "line": 15487,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FieldBusSlaveReadAI",
+        "signature": "FieldBusSlaveReadAI(AOIndex, readeNum)",
+        "line": 15515,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FieldBusSlaveWaitDI",
+        "signature": "FieldBusSlaveWaitDI(DIIndex, status, waitMs)",
+        "line": 15543,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "FieldBusSlaveWaitAI",
+        "signature": "FieldBusSlaveWaitAI(AIIndex, waitType, value, waitMs)",
+        "line": 15569,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetSuckerCtrl",
+        "signature": "SetSuckerCtrl(slaveID, len, ctrlValue)",
+        "line": 15595,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSuckerState",
+        "signature": "GetSuckerState(slaveID)",
+        "line": 15621,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitSuckerState",
+        "signature": "WaitSuckerState(slaveID, state, ms)",
+        "line": 15648,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "OpenLuaUpload",
+        "signature": "OpenLuaUpload(filePath)",
+        "line": 15671,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetTorqueDetectionSwitch",
+        "signature": "SetTorqueDetectionSwitch(flag)",
+        "line": 15696,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingLaserOnOff",
+        "signature": "LaserTrackingLaserOnOff(OnOff, weldId=0)",
+        "line": 15741,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingTrackOnOff",
+        "signature": "LaserTrackingTrackOnOff(OnOff, coordId)",
+        "line": 15764,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingSearchStart_xyz",
+        "signature": "LaserTrackingSearchStart_xyz(direction, vel, distance, timeout, posSensorNum)",
+        "line": 15790,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingSearchStart_point",
+        "signature": "LaserTrackingSearchStart_point(directionPoint, vel, distance, timeout, posSensorNum)",
+        "line": 15819,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingSensorConfig",
+        "signature": "LaserTrackingSensorConfig(ip, port)",
+        "line": 15847,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserTrackingSensorSamplePeriod",
+        "signature": "LaserTrackingSensorSamplePeriod(period)",
+        "line": 15869,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LoadPosSensorDriver",
+        "signature": "LoadPosSensorDriver(type)",
+        "line": 15890,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "UnLoadPosSensorDriver",
+        "signature": "UnLoadPosSensorDriver()",
+        "line": 15910,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserSensorRecord1",
+        "signature": "LaserSensorRecord1(status, delayTime)",
+        "line": 15931,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserSensorReplay",
+        "signature": "LaserSensorReplay(delayTime, speed)",
+        "line": 15954,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveLTR",
+        "signature": "MoveLTR()",
+        "line": 15975,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToLaserRecordStart",
+        "signature": "MoveToLaserRecordStart(moveType, ovl)",
+        "line": 15996,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToLaserRecordEnd",
+        "signature": "MoveToLaserRecordEnd(moveType, ovl)",
+        "line": 16019,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToLaserSeamPos",
+        "signature": "MoveToLaserSeamPos(moveFlag, ovl, dataFlag, plateType, trackOffectType, offset)",
+        "line": 16046,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLaserSeamPos",
+        "signature": "GetLaserSeamPos(trackOffectType, offset)",
+        "line": 16079,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ImpedanceControlStartStop",
+        "signature": "ImpedanceControlStartStop(status, workSpace, forceThreshold, m, b, k, maxV, maxVA, maxW, maxWA)",
+        "line": 16125,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetToolCoordWithID",
+        "signature": "GetToolCoordWithID(id)",
+        "line": 16167,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetWObjCoordWithID",
+        "signature": "GetWObjCoordWithID(id)",
+        "line": 16205,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetExToolCoordWithID",
+        "signature": "GetExToolCoordWithID(id)",
+        "line": 16236,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetExAxisCoordWithID",
+        "signature": "GetExAxisCoordWithID(id)",
+        "line": 16268,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetTargetPayloadWithID",
+        "signature": "GetTargetPayloadWithID(id)",
+        "line": 16300,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetCurToolCoord",
+        "signature": "GetCurToolCoord()",
+        "line": 16324,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetCurWObjCoord",
+        "signature": "GetCurWObjCoord()",
+        "line": 16343,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetCurExToolCoord",
+        "signature": "GetCurExToolCoord()",
+        "line": 16362,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetCurExAxisCoord",
+        "signature": "GetCurExAxisCoord()",
+        "line": 16381,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CustomWeaveSetPara",
+        "signature": "CustomWeaveSetPara(id, pointNum, point, stayTime, frequency, incStayType, stationary)",
+        "line": 16407,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "CustomWeaveGetPara",
+        "signature": "CustomWeaveGetPara(id)",
+        "line": 16449,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "KernelUpgrade",
+        "signature": "KernelUpgrade(filePath)",
+        "line": 16494,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetKernelUpgradeResult",
+        "signature": "GetKernelUpgradeResult()",
+        "line": 16524,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "JointSensitivityEnable",
+        "signature": "JointSensitivityEnable(status)",
+        "line": 16549,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "JointSensitivityCalibration",
+        "signature": "JointSensitivityCalibration()",
+        "line": 16571,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "JointSensitivityCollect",
+        "signature": "JointSensitivityCollect()",
+        "line": 16595,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MotionQueueClear",
+        "signature": "MotionQueueClear()",
+        "line": 16615,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetSlavePortErrCounter",
+        "signature": "GetSlavePortErrCounter()",
+        "line": 16642,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SlavePortErrCounterClear",
+        "signature": "SlavePortErrCounterClear(slaveID)",
+        "line": 16687,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetVelFeedForwardRatio",
+        "signature": "SetVelFeedForwardRatio(radio)",
+        "line": 16708,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetVelFeedForwardRatio",
+        "signature": "GetVelFeedForwardRatio()",
+        "line": 16729,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "RobotMCULogCollect",
+        "signature": "RobotMCULogCollect()",
+        "line": 16752,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToIntersectLineStart",
+        "signature": "MoveToIntersectLineStart(mainPoint, piecePoint, tool, wobj, vel, acc, ovl, oacc, moveType, mainExaxisPos=[[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]], pieceExaxisPos=[[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]], extAxisFlag=0, exaxisPos=[0.0, 0.0, 0.0, 0.0], moveDirection=0, offset=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])",
+        "line": 16788,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveIntersectLine",
+        "signature": "MoveIntersectLine(mainPoint, piecePoint, tool, wobj, vel, acc, ovl, oacc, moveDirection, mainExaxisPos=[[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]], pieceExaxisPos=[[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]], extAxisFlag=0, exaxisPos=[[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]], offset=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0])",
+        "line": 16892,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "JointHysteresisError",
+        "signature": "JointHysteresisError()",
+        "line": 16989,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "JointRepeatability",
+        "signature": "JointRepeatability()",
+        "line": 17013,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAdmittanceParams",
+        "signature": "SetAdmittanceParams(M, B, K, threshold, sensitivity, setZeroFlag)",
+        "line": 17042,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetCoderCompenParams",
+        "signature": "SetCoderCompenParams(status, torqueCoeff)",
+        "line": 17077,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TCPComputeRPY",
+        "signature": "TCPComputeRPY(Btool, Etool, sensor, radius, dz)",
+        "line": 17108,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TCPComputeXYZ",
+        "signature": "TCPComputeXYZ(select, originDirection, pos1, pos2, pos3, pos4)",
+        "line": 17145,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TCPRecordFlangePosStart",
+        "signature": "TCPRecordFlangePosStart()",
+        "line": 17177,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TCPRecordFlangePosEnd",
+        "signature": "TCPRecordFlangePosEnd()",
+        "line": 17196,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "TCPGetRecordFlangePos",
+        "signature": "TCPGetRecordFlangePos()",
+        "line": 17216,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "PhotoelectricSensorTCPCalibration",
+        "signature": "PhotoelectricSensorTCPCalibration(luaFile, offsetX)",
+        "line": 17241,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "LaserSensorRecordandReplay",
+        "signature": "LaserSensorRecordandReplay(delayMode, delayTime, delayDisExAxisNum, delayDis, sensitivePara, trackMode, triggerMode, runTime, speed)",
+        "line": 17309,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveStationary",
+        "signature": "MoveStationary()",
+        "line": 17339,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetInverseKinExaxis",
+        "signature": "GetInverseKinExaxis(type, desc_pos, exaxis, tool, workPiece)",
+        "line": 17366,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "MoveToTPDStart",
+        "signature": "MoveToTPDStart(name, moveType, ovl)",
+        "line": 17403,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetAxleGenComEnable",
+        "signature": "SetAxleGenComEnable(mode)",
+        "line": 17426,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetAxleGenComCycleData",
+        "signature": "GetAxleGenComCycleData(len)",
+        "line": 17447,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SndRcvAxleGenComCmdData",
+        "signature": "SndRcvAxleGenComCmdData(len_snd, sndBuff, len_rcv)",
+        "line": 17477,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetRobotStopOnComDisc",
+        "signature": "SetRobotStopOnComDisc(portID, enable, confirmTime)",
+        "line": 17508,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetRobotStopOnComDisc",
+        "signature": "GetRobotStopOnComDisc(portID)",
+        "line": 17535,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "OriginPointWeaveStart",
+        "signature": "OriginPointWeaveStart(weaveNum, mode, refPoint, weaveTime)",
+        "line": 17568,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "OriginPointWeaveEnd",
+        "signature": "OriginPointWeaveEnd()",
+        "line": 17606,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDIConfig",
+        "signature": "SetDIConfig(config)",
+        "line": 17633,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDIConfig",
+        "signature": "GetDIConfig()",
+        "line": 17665,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDOConfig",
+        "signature": "SetDOConfig(config)",
+        "line": 17701,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDOConfig",
+        "signature": "GetDOConfig()",
+        "line": 17735,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolDIConfig",
+        "signature": "SetToolDIConfig(config)",
+        "line": 17766,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetToolDIConfig",
+        "signature": "GetToolDIConfig()",
+        "line": 17795,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDIConfigLevel",
+        "signature": "SetDIConfigLevel(config)",
+        "line": 17822,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDIConfigLevel",
+        "signature": "GetDIConfigLevel()",
+        "line": 17847,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDOConfigLevel",
+        "signature": "SetDOConfigLevel(config)",
+        "line": 17874,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDOConfigLevel",
+        "signature": "GetDOConfigLevel()",
+        "line": 17899,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetToolDIConfigLevel",
+        "signature": "SetToolDIConfigLevel(config)",
+        "line": 17926,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetToolDIConfigLevel",
+        "signature": "GetToolDIConfigLevel()",
+        "line": 17951,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetStandardDILevel",
+        "signature": "SetStandardDILevel(config)",
+        "line": 17978,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetStandardDILevel",
+        "signature": "GetStandardDILevel()",
+        "line": 18003,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetStandardDOLevel",
+        "signature": "SetStandardDOLevel(config)",
+        "line": 18030,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetStandardDOLevel",
+        "signature": "GetStandardDOLevel()",
+        "line": 18055,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetExAxisCmdDoneTime",
+        "signature": "SetExAxisCmdDoneTime(time)",
+        "line": 18082,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "OpenLuaDownload",
+        "signature": "OpenLuaDownload(fileName, savePath)",
+        "line": 18108,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetUserLEDColor",
+        "signature": "SetUserLEDColor(r, g, b)",
+        "line": 18137,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "OpenLuaDelete",
+        "signature": "OpenLuaDelete(fileName)",
+        "line": 18164,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "AllOpenLuaDelete",
+        "signature": "AllOpenLuaDelete()",
+        "line": 18178,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoJV",
+        "signature": "ServoJV(joint_vel, exis_vel, acc=0.0, vel=0.0, cmdT=0.008, filterT=0.0, gain=0.0, id=0, comType=0)",
+        "line": 18201,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoMITStart",
+        "signature": "ServoMITStart(comType=0)",
+        "line": 18264,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoMITEnd",
+        "signature": "ServoMITEnd(comType=0)",
+        "line": 18313,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ServoMIT",
+        "signature": "ServoMIT(posGain, desPos, velGain, desVel, torque_ff, interval, comType=0)",
+        "line": 18368,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingParam",
+        "signature": "SetLaserWeldingParam(num, scanSpeed, scanWidth, peakPower, dutyCycle, Freq, io_type=1)",
+        "line": 18435,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingStartEnd",
+        "signature": "SetLaserWeldingStartEnd(status, io_type=1, max_waittime=10000)",
+        "line": 18466,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingEnable",
+        "signature": "SetLaserWeldingEnable(status, io_type=1)",
+        "line": 18492,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ResetLaserWeldingErr",
+        "signature": "ResetLaserWeldingErr(status, io_type=1)",
+        "line": 18516,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLaserWeldingRunningState",
+        "signature": "GetLaserWeldingRunningState(io_type=1)",
+        "line": 18541,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLaserWeldingErrState",
+        "signature": "GetLaserWeldingErrState(io_type=1)",
+        "line": 18569,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLaserWeldingParamTarget",
+        "signature": "GetLaserWeldingParamTarget(num)",
+        "line": 18601,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetLaserWeldingParamActual",
+        "signature": "GetLaserWeldingParamActual(io_type=1)",
+        "line": 18637,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingEnableExtDoNum",
+        "signature": "SetLaserWeldingEnableExtDoNum(ctrlModeDONum)",
+        "line": 18668,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingStartExtDoNum",
+        "signature": "SetLaserWeldingStartExtDoNum(ctrlModeDONum)",
+        "line": 18691,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingErrResetExtDoNum",
+        "signature": "SetLaserWeldingErrResetExtDoNum(ctrlModeDONum)",
+        "line": 18714,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingRunningStateExtDiNum",
+        "signature": "SetLaserWeldingRunningStateExtDiNum(diNum)",
+        "line": 18737,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetLaserWeldingErrStateExtDiNum",
+        "signature": "SetLaserWeldingErrStateExtDiNum(diNum)",
+        "line": 18760,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ExtAxisGetParamConfig",
+        "signature": "ExtAxisGetParamConfig(axisID)",
+        "line": 18795,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDexterousHandsMove",
+        "signature": "SetDexterousHandsMove(idstart, slaveNum, pos, speed, force, max_time)",
+        "line": 18840,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDexterousHandsAct",
+        "signature": "SetDexterousHandsAct(id, act)",
+        "line": 18873,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "ClearDexterousHandsError",
+        "signature": "ClearDexterousHandsError()",
+        "line": 18900,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetDexterousHandsFunc",
+        "signature": "SetDexterousHandsFunc(id, func)",
+        "line": 18932,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetDexterousHandsFunc",
+        "signature": "GetDexterousHandsFunc(id)",
+        "line": 18964,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWeaveBackCenterConfig",
+        "signature": "SetWeaveBackCenterConfig(flag)",
+        "line": 18998,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetWeaveBackCenterConfig",
+        "signature": "GetWeaveBackCenterConfig()",
+        "line": 19025,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetSpeedInstant",
+        "signature": "SetSpeedInstant(vel)",
+        "line": 19053,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetWeaveOffsetRT",
+        "signature": "SetWeaveOffsetRT(offset)",
+        "line": 19093,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetVelReducePara",
+        "signature": "SetVelReducePara(enable, maxTCPVel, strategy, maxJointVel=[45.0, 45.0, 45.0, 45.0, 45.0, 45.0])",
+        "line": 19135,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WorkPieceTrsfStart",
+        "signature": "WorkPieceTrsfStart(workpieceID)",
+        "line": 19170,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WorkPieceTrsfEnd",
+        "signature": "WorkPieceTrsfEnd()",
+        "line": 19196,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "SetStationaryTrackPara",
+        "signature": "SetStationaryTrackPara(trackMode, trackTime, trackDis)",
+        "line": 19223,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetExtDIConfig",
+        "signature": "GetExtDIConfig()",
+        "line": 19259,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetExtDOConfig",
+        "signature": "GetExtDOConfig()",
+        "line": 19296,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "GetWeldMachineCtrlMode",
+        "signature": "GetWeldMachineCtrlMode()",
+        "line": 19324,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      },
+      {
+        "name": "WaitStationaryMotionDone",
+        "signature": "WaitStationaryMotionDone()",
+        "line": 19351,
+        "dispatch": "original_sdk",
+        "hardware_validation": "not_individually_verified"
+      }
+    ]
+  },
+  "omnipicker_fibre": {
+    "source": "external-sdk/omnipicker_endpoints.json",
+    "sha256": "02b7437d3e3adde61eb5b94da99a35965a9850e091eda85ee819c1c80777096b",
+    "schema_kind": "observed_firmware_schema",
+    "features": [
+      {
+        "name": "device_type",
+        "kind": "property",
+        "type": "uint8",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "serial_number",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "fw_version",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "fw_hash",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "can_node_id",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "volume",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "encoder_type",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "rs485_mode",
+        "kind": "property",
+        "type": "bool",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "modbus_mode",
+        "kind": "property",
+        "type": "bool",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "uart_baudrate",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "uart_stopbits",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.error_code",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.request_state",
+        "kind": "function",
+        "inputs": [
+          {
+            "name": "state",
+            "type": "uint8"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "result",
+            "type": "bool"
+          }
+        ],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.clear_error",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.apply_user_offset",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "result",
+            "type": "bool"
+          }
+        ],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.calc_current_gain",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.ctrl_mode",
+        "kind": "property",
+        "type": "uint8",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.feed_mode",
+        "kind": "property",
+        "type": "uint8",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.enable_on_boot",
+        "kind": "property",
+        "type": "bool",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.current_ctrl_bandwidth",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.current_gain_p",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.current_gain_i",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.vel_gain",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.vel_integral_gain",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.pos_gain",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.current_limit",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.velocity_limit",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.traj_vel",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.traj_acc",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.traj_dcc",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.ramp_vel",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.ramp_cur",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.calib_current",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.calib_max_volt",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.calib_valid",
+        "kind": "property",
+        "type": "bool",
+        "access": "r",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.elec_offset",
+        "kind": "property",
+        "type": "int32",
+        "access": "r",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.swap_phase",
+        "kind": "property",
+        "type": "bool",
+        "access": "r",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.invert_dir",
+        "kind": "property",
+        "type": "bool",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.remap_iq",
+        "kind": "property",
+        "type": "bool",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.reduction",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.polar_pair",
+        "kind": "property",
+        "type": "uint8",
+        "access": "r",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.do_r_and_h_calib",
+        "kind": "property",
+        "type": "bool",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.phase_resistance",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.phase_inductance",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.inertia",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.protect_over_speed",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.protect_over_voltage",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.protect_under_voltage",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.protect_over_heat",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.protect_over_current",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.k_nm_per_amp",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.pos_min",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.pos_max",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.vel_min",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.vel_max",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.tor_min",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.tor_max",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.kp_min",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.kp_max",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.kd_min",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.mit_params.kd_max",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.remap_factors.a",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.remap_factors.b",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.remap_factors.c",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.config.remap_factors.d",
+        "kind": "property",
+        "type": "float",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.ctrl.set_pos",
+        "kind": "function",
+        "inputs": [
+          {
+            "name": "pos",
+            "type": "float"
+          }
+        ],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.ctrl.set_vel",
+        "kind": "function",
+        "inputs": [
+          {
+            "name": "vel",
+            "type": "float"
+          }
+        ],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.ctrl.set_cur",
+        "kind": "function",
+        "inputs": [
+          {
+            "name": "cur",
+            "type": "float"
+          }
+        ],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.ctrl.set_tor",
+        "kind": "function",
+        "inputs": [
+          {
+            "name": "tor",
+            "type": "float"
+          }
+        ],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "motor.ctrl.set_mit",
+        "kind": "function",
+        "inputs": [
+          {
+            "name": "pos",
+            "type": "float"
+          },
+          {
+            "name": "vel",
+            "type": "float"
+          },
+          {
+            "name": "tor",
+            "type": "float"
+          },
+          {
+            "name": "kp",
+            "type": "float"
+          },
+          {
+            "name": "kd",
+            "type": "float"
+          }
+        ],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "debug_flag",
+        "kind": "property",
+        "type": "uint32",
+        "access": "rw",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "save_config",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "result",
+            "type": "bool"
+          }
+        ],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "erase_config",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "result",
+            "type": "bool"
+          }
+        ],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "reboot",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "enter_dfu",
+        "kind": "function",
+        "inputs": [],
+        "outputs": [],
+        "requires": [
+          "usb"
+        ]
+      }
+    ]
+  },
+  "omnipicker_vendor": {
+    "source": "external-sdk/omnipicker_2025.h",
+    "sha256": "0a80e879f57b82ea23ea45a1c3c68d9a8d7903d16d85c4f6be078b038e4bd216",
+    "product": "OmniPicker2025 / OP1",
+    "methods": [
+      {
+        "name": "SendFrameSyncByCanfd",
+        "requires": [
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "SendBroadcastFrameByCanfd",
+        "requires": [
+          "canfd"
+        ]
+      },
+      {
+        "name": "SendMitFrameAsync",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "GetCanfdFrameRange",
+        "requires": [
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "GetMitFrameRange",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "UpdateFirmwareViaFlash",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "StartMotorCalibration",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "Reboot",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "SetCanNodeId",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "GetCanNodeId",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "ShowDeviceInfo",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "createHandByUSB",
+        "requires": [
+          "usb"
+        ]
+      },
+      {
+        "name": "createHandByZlgcan",
+        "requires": [
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "createHandByZlgCanTcp",
+        "requires": [
+          "canfd"
+        ]
+      },
+      {
+        "name": "createHandSocketCan",
+        "requires": [
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "createHandByHcan",
+        "requires": [
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "SetHandGesture",
+        "requires": [
+          "usb",
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "GetHandGesture",
+        "requires": [
+          "usb",
+          "can",
+          "canfd"
+        ]
+      },
+      {
+        "name": "GetNumOfJointMotors",
+        "requires": []
+      },
+      {
+        "name": "GetDoA",
+        "requires": []
+      }
+    ]
+  },
+  "sources": {
+    "fr3": "https://fairino-doc-en.readthedocs.io/3.9.8/download.html",
+    "omnipicker": "https://www.agibot.com/DOCS/PM/news"
+  }
+}

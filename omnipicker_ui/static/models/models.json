@@ -1,0 +1,976 @@
+{
+  "arms": {
+    "FR3WMS": {
+      "name": "FR3WMS",
+      "root": "base_link",
+      "flange": "tool_Link",
+      "links": [
+        {
+          "name": "base_link",
+          "mesh": "/static/models/FR3WMS/base_link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "shoulder_Link",
+          "mesh": "/static/models/FR3WMS/shoulder_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "upperarm_Link",
+          "mesh": "/static/models/FR3WMS/upperarm_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "forearm_Link",
+          "mesh": "/static/models/FR3WMS/forearm_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "wrist1_Link",
+          "mesh": "/static/models/FR3WMS/wrist1_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "wrist2_Link",
+          "mesh": "/static/models/FR3WMS/wrist2_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "wrist3_Link",
+          "mesh": "/static/models/FR3WMS/wrist3_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "tool_Link",
+          "mesh": null,
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "joints": [
+        {
+          "name": "j1",
+          "type": "revolute",
+          "parent": "base_link",
+          "child": "shoulder_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j2",
+          "type": "revolute",
+          "parent": "shoulder_Link",
+          "child": "upperarm_Link",
+          "origin": {
+            "xyz": [
+              0.00065268,
+              0.00055951,
+              0.14
+            ],
+            "rpy": [
+              1.5708,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j3",
+          "type": "revolute",
+          "parent": "upperarm_Link",
+          "child": "forearm_Link",
+          "origin": {
+            "xyz": [
+              -0.28,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j4",
+          "type": "revolute",
+          "parent": "forearm_Link",
+          "child": "wrist1_Link",
+          "origin": {
+            "xyz": [
+              -0.24,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j5",
+          "type": "revolute",
+          "parent": "wrist1_Link",
+          "child": "wrist2_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.102
+            ],
+            "rpy": [
+              1.5708,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j6",
+          "type": "revolute",
+          "parent": "wrist2_Link",
+          "child": "wrist3_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.102
+            ],
+            "rpy": [
+              -1.5708,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "tool",
+          "type": "fixed",
+          "parent": "wrist3_Link",
+          "child": "tool_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              -0.00038104,
+              0.1
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "FR3WML": {
+      "name": "FR3WML",
+      "root": "base_link",
+      "flange": "tool_Link",
+      "links": [
+        {
+          "name": "base_link",
+          "mesh": "/static/models/FR3WML/base_link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "shoulder_Link",
+          "mesh": "/static/models/FR3WML/shoulder_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "upperarm_Link",
+          "mesh": "/static/models/FR3WML/upperarm_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "forearm_Link",
+          "mesh": "/static/models/FR3WML/forearm_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "wrist1_Link",
+          "mesh": "/static/models/FR3WML/wrist1_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "wrist2_Link",
+          "mesh": "/static/models/FR3WML/wrist2_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "wrist3_Link",
+          "mesh": "/static/models/FR3WML/wrist3_Link.stl",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "tool_Link",
+          "mesh": null,
+          "origin": {
+            "xyz": [
+              0,
+              0,
+              0
+            ],
+            "rpy": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "joints": [
+        {
+          "name": "j1",
+          "type": "revolute",
+          "parent": "base_link",
+          "child": "shoulder_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j2",
+          "type": "revolute",
+          "parent": "shoulder_Link",
+          "child": "upperarm_Link",
+          "origin": {
+            "xyz": [
+              0.00011097,
+              -0.0010487,
+              0.14
+            ],
+            "rpy": [
+              1.5708,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j3",
+          "type": "revolute",
+          "parent": "upperarm_Link",
+          "child": "forearm_Link",
+          "origin": {
+            "xyz": [
+              -0.425,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j4",
+          "type": "revolute",
+          "parent": "forearm_Link",
+          "child": "wrist1_Link",
+          "origin": {
+            "xyz": [
+              -0.395,
+              0.0,
+              0.0
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j5",
+          "type": "revolute",
+          "parent": "wrist1_Link",
+          "child": "wrist2_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.102
+            ],
+            "rpy": [
+              1.5708,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "j6",
+          "type": "revolute",
+          "parent": "wrist2_Link",
+          "child": "wrist3_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              0.0,
+              0.102
+            ],
+            "rpy": [
+              -1.5708,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "name": "tool",
+          "type": "fixed",
+          "parent": "wrist3_Link",
+          "child": "tool_Link",
+          "origin": {
+            "xyz": [
+              0.0,
+              -0.00038104,
+              0.1
+            ],
+            "rpy": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "axis": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  "gripper": {
+    "name": "OmniPicker",
+    "root": "gripper_r_base_link",
+    "driven": "gripper_r_inner_joint1",
+    "links": [
+      {
+        "name": "gripper_r_base_link",
+        "mesh": "/static/models/OmniPicker/base_link.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_inner_link1",
+        "mesh": "/static/models/OmniPicker/inner_link1.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_inner_link3",
+        "mesh": "/static/models/OmniPicker/inner_link3.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_inner_link4",
+        "mesh": "/static/models/OmniPicker/inner_link4.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_inner_link2",
+        "mesh": "/static/models/OmniPicker/inner_link2.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_outer_link1",
+        "mesh": "/static/models/OmniPicker/outer_link1.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_outer_link3",
+        "mesh": "/static/models/OmniPicker/outer_link3.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_outer_link4",
+        "mesh": "/static/models/OmniPicker/outer_link4.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "name": "gripper_r_outer_link2",
+        "mesh": "/static/models/OmniPicker/outer_link2.stl",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "gripper_r_inner_joint1",
+        "type": "revolute",
+        "parent": "gripper_r_base_link",
+        "child": "gripper_r_inner_link1",
+        "origin": {
+          "xyz": [
+            0.0,
+            -0.0195,
+            0.0565
+          ],
+          "rpy": [
+            0.14649265358979324,
+            -1.5707963267948966,
+            -0.15964
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "gripper_r_inner_joint3",
+        "type": "revolute",
+        "parent": "gripper_r_inner_link1",
+        "child": "gripper_r_inner_link3",
+        "origin": {
+          "xyz": [
+            0.030852,
+            -0.018551,
+            0.0
+          ],
+          "rpy": [
+            3.141592653589793,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": 0.1,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "gripper_r_inner_joint4",
+        "type": "revolute",
+        "parent": "gripper_r_inner_link3",
+        "child": "gripper_r_inner_link4",
+        "origin": {
+          "xyz": [
+            0.018118,
+            -0.01574,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": 0.25,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "gripper_r_inner_joint0",
+        "type": "revolute",
+        "parent": "gripper_r_inner_link4",
+        "child": "gripper_r_inner_link2",
+        "origin": {
+          "xyz": [
+            0.0,
+            -0.01,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": -0.7,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "gripper_r_outer_joint1",
+        "type": "revolute",
+        "parent": "gripper_r_base_link",
+        "child": "gripper_r_outer_link1",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.0195,
+            0.0565
+          ],
+          "rpy": [
+            0.14649265358979324,
+            -1.5707963267948966,
+            -0.15964
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": -1.0,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "gripper_r_outer_joint3",
+        "type": "revolute",
+        "parent": "gripper_r_outer_link1",
+        "child": "gripper_r_outer_link3",
+        "origin": {
+          "xyz": [
+            0.030852,
+            0.018551,
+            0.0
+          ],
+          "rpy": [
+            3.141592653589793,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": 0.1,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "gripper_r_outer_joint4",
+        "type": "revolute",
+        "parent": "gripper_r_outer_link3",
+        "child": "gripper_r_outer_link4",
+        "origin": {
+          "xyz": [
+            0.018118,
+            0.01574,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": -0.25,
+          "offset": 0.0
+        }
+      },
+      {
+        "name": "gripper_r_outer_joint0",
+        "type": "revolute",
+        "parent": "gripper_r_outer_link4",
+        "child": "gripper_r_outer_link2",
+        "origin": {
+          "xyz": [
+            0.0,
+            0.01,
+            0.0
+          ],
+          "rpy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mimic": {
+          "joint": "gripper_r_inner_joint1",
+          "multiplier": 0.7,
+          "offset": 0.0
+        }
+      }
+    ],
+    "lower": -0.7853981633974483,
+    "upper": 0,
+    "pose_source": "manufacturer URDF mimic joints; contact adaptation is not observable"
+  },
+  "units": "metres"
+}
